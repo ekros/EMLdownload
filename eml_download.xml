@@ -1,0 +1,14 @@
+<zimlet name="eml_download" version="1.0" description="Allows downloading and email in plain text format.">
+	<include>emld.js</include>
+	<includeCSS>emld.css</includeCSS>
+	<resource>emld-icon.gif</resource>
+	<handlerObject>eml_download</handlerObject>
+
+	<zimletPanelItem label="Download email" icon="emld-panelIcon">
+		<toolTipText>Drag one email here. Remember to rename the file to .eml (or .txt if you prefer)!</toolTipText>
+		<dragSource type="ZmConv" />
+	    <dragSource type="ZmMailMsg">
+            </dragSource>
+		<dragSource type="ZmFolder"/>
+	</zimletPanelItem>
+</zimlet>
